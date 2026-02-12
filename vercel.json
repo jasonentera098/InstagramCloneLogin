@@ -1,0 +1,18 @@
+{
+  "buildCommand": "npm install",
+  "devCommand": "node server.js",
+  "installCommand": "npm install",
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/$1"
+    },
+    {
+      "source": "/",
+      "destination": "/Ig_login.html"
+    }
+  ],
+  "env": {
+    "MONGODB_URI": "mongodb+srv://jasonentera14_db_user:entera123@mycluster.f7daipn.mongodb.net/?appName=myCluster"
+  }
+}
